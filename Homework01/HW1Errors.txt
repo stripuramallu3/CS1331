@@ -1,0 +1,28 @@
+1) The error in this case is that the name of the file does not match the name of the class. It can be fixed by changing the 'b' in the class title to 'B.' 
+	Compile Error Line: GTBuzz.java:1: error: class GTbuzz is public, should be declared in a file named GTbuzz.java
+The runtime error that occured describes Java could not execute the main method.   
+	Runtime Error Line: Could not find or load main class GTBuzz
+2) No errors while attempting to compile. There was a runtime error that occured because the integer value involved a division by zero. This error can be fixed by not dividing by 0.
+	Runtime Error Line: Exception in Thread "main" java.lang.ArithmeticException: / by zero at GTBuzz.main(GTBuzz.java:5)
+3) The compile error occured because Java tried to find the method println, but it wasn't specified that it was in the class System.out. 
+	Compile Error Line: GTBuzz.java:4: error: cannot find symbol println("I'm a ramblin' wreck from Georgia Tech!")
+The runtime error that occured because there was an error executing the main method. 
+	Runtime Error Line: Could not find or load main class GTBuzz.java
+4) There are five compile errors that occured because the string was not properly enclosed in double quotations, also caused Java to misinterpert where lines end, and a new lines begin (semi-colon error).
+	Compile Error Line1: GTBuzz.java:4: error: unclosed character literal System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+	Compile Error Line2: GTBuzz.java.4: error: unclosed character literal System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+	Compile Error Line3: GTBuzz.java.4: error: ';' expected System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+	Compile Error Line4: GTBuzz.java.4: error: ';' expected System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+	Compile Error Line5: GTBuzz.java.4: error: unclosed string literal System.out.println(I'm a ramblin' wreck from Georgia Tech!");
+There was one runtime error that occured, as well; Java could not execute the main method. The compile and runtime errors can be fixed by properly enclosed the string "I'm a ramblin' wreck from Georgia Tech" in double quotations. 
+	Runtime Error Line: Could not find or load main class GTBuzz.java 
+5) No compile or Runtime Error(s) 
+6) There was one compile error that occured because Java was expecting a semicolon to indicate the end of the line, however there wasn't a semicolon. This can be fixed by adding a semicolon at the end of the line. 
+	Compile Error Line: GTBuzz.java:4: error: ';' expected System.out.println("I'm a ramblin' wreck from Georgia Tech!") 
+The lack of a semicolon after the line also caused a runtime error, where Java could not execute the main method. 
+	Runtime Error Line: Could not find or load main class GTBuzz.java
+Adding a semicolon at the end of the line can fix the error. 
+7) This error occured because Java did not know when the class GTBuzz ended, so it keeps reading. It can be fixed by adding a curly brace at the end of file. 
+	Compile Line Error: GTBuzz.java:5: error: reached end of file while parsing }//end of main method
+This also caused a runtime error, Java could not execute the main method. 
+	Runtime Error Line: Could not find or load main class GTBuzz.java. 
